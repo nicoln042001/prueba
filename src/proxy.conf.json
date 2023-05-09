@@ -1,0 +1,6 @@
+{
+    "/api": {
+    "target": "http://190.60.101.59:6003/Help",
+    "secure": false
+    }
+    }

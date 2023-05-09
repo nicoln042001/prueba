@@ -1,0 +1,44 @@
+<div class="container">
+  <div class="h1 mt-2 text-center"><h1>Formulario</h1></div>
+  <form [formGroup]="form" >
+    <div class="row">
+      <mat-form-field class="example-full-width" [hidden]="true" style="margin:4rem;">
+        <mat-label>Id</mat-label>
+        <input matInput placeholder="Id" formControlName="id"/>
+      </mat-form-field>
+    
+      <mat-form-field class="example-full-width col-6">
+        <mat-label>Documento</mat-label>
+        <input matInput placeholder="Documento" formControlName="Documento" type="text"/>
+      </mat-form-field>
+
+      <mat-form-field class="example-full-width col-6">
+        <mat-label>Nombres</mat-label>
+        <input matInput placeholder="Nombres" formControlName="Nombres" type="text"/>
+      </mat-form-field>
+
+      <mat-form-field class="example-full-width col-6">
+        <mat-label>Apellidos</mat-label>
+        <input matInput placeholder="Apellidos" formControlName="Apellidos" type="text"/>
+      </mat-form-field>
+
+      <mat-form-field class="example-full-width col-6">
+        <mat-label>Teléfono</mat-label>
+        <input matInput placeholder="Teléfono" formControlName="Telefono" type="number"/>
+      </mat-form-field>
+
+      <mat-form-field class="example-full-width col-6">
+        <mat-label>Correo</mat-label>
+        <input matInput placeholder="Correo" formControlName="Correo" type="email"/>
+      </mat-form-field>
+
+      <mat-form-field class="example-full-width col-6">
+        <mat-label>Dirección</mat-label>
+        <input matInput placeholder="Dirección" formControlName="Direccion"/>
+      </mat-form-field>
+    </div>
+    <div>
+      <button class="btn btn-success" style="float:right" (click)="guardarInfo()">Guardar</button>
+    </div>
+  </form>
+</div>
